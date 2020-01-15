@@ -1,0 +1,56 @@
+{
+  "name": "mui-event-list",
+  "version": "1.0.0",
+  "description": "Google calendar style event list with Material-UI",
+  "main": "./build/index.js",
+  "scripts": {
+    "start": "webpack --watch",
+    "build": "webpack",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/98sean98/mui-event-list.git"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
+  },
+  "author": "98sean98",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/98sean98/mui-event-list/issues"
+  },
+  "homepage": "https://github.com/98sean98/mui-event-list#readme",
+  "keywords": [
+    "google calendar",
+    "event list",
+    "material ui"
+  ],
+  "peerDependencies": {
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "@material-ui/core": "^4.8.3"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.8.3",
+    "@babel/core": "^7.8.3",
+    "@babel/preset-env": "^7.8.3",
+    "@babel/preset-react": "^7.8.3",
+    "@material-ui/core": "^4.8.3",
+    "babel-loader": "^8.0.6",
+    "css-loader": "^3.4.2",
+    "husky": "^4.0.10",
+    "prettier": "^1.19.1",
+    "pretty-quick": "^2.0.1",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "style-loader": "^1.1.2",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
+  }
+}
