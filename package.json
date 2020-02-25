@@ -1,8 +1,30 @@
 {
   "name": "mui-event-list",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
+  "version": "0.0.1",
+  "private": false,
+  "author": "98sean98",
+  "description": "Google Calendar inspired event list using Material-UI",
+  "keywords": [
+    "google",
+    "calendar",
+    "event",
+    "list",
+    "material-ui"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/98sean98/mui-event-list.git"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/98sean98/mui-event-list",
+  "peerDependencies": {
+    "@material-ui/core": "^4.9.4",
+    "@types/react": "^16.9.0",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0"
+  },
+  "devDependencies": {
+    "@material-ui/core": "^4.9.4",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
@@ -10,6 +32,9 @@
     "@types/node": "^12.0.0",
     "@types/react": "^16.9.0",
     "@types/react-dom": "^16.9.0",
+    "husky": "^4.2.3",
+    "prettier": "^1.19.1",
+    "pretty-quick": "^2.0.1",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-scripts": "3.4.0",
@@ -35,5 +60,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
   }
 }
