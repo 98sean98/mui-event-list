@@ -17,6 +17,9 @@
   },
   "license": "MIT",
   "homepage": "https://github.com/98sean98/mui-event-list",
+  "main": "build/main.js",
+  "module": "build/main.es.js",
+  "jsnext:main": "build/main.es.js",
   "peerDependencies": {
     "@material-ui/core": "^4.9.4",
     "@types/react": "^16.9.0",
@@ -33,17 +36,23 @@
     "@types/react": "^16.9.0",
     "@types/react-dom": "^16.9.0",
     "husky": "^4.2.3",
+    "jest": "^25.1.0",
     "prettier": "^1.19.1",
     "pretty-quick": "^2.0.1",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-scripts": "3.4.0",
+    "rollup": "^1.31.1",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-peer-deps-external": "^2.2.2",
+    "rollup-plugin-typescript2": "^0.26.0",
     "typescript": "~3.7.2"
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
+    "build": "rollup -c",
+    "test": "echo \"no test coverage yet\"",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
