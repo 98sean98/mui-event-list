@@ -1,0 +1,27 @@
+os: linux
+language: node_js
+node_js:
+  - "10"
+  - "12"
+cache:
+  npm: true
+
+jobs:
+  include:
+    - stage: test
+      install:
+        - npm install
+      script:
+        - npm run test
+
+    - stage: release
+      install:
+        - npm install
+      script:
+        - npm run build
+      deploy:
+        - provider: npm
+          email: seanchok@gmail.com
+          api_token: $NPM_API_TOKEN
+          on:
+            branch: master
