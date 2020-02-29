@@ -1,6 +1,6 @@
 {
   "name": "mui-event-list",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "private": false,
   "author": "98sean98",
   "description": "Google Calendar inspired event list using Material-UI",
