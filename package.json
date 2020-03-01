@@ -1,6 +1,6 @@
 {
   "name": "mui-event-list",
-  "version": "0.0.1",
+  "version": "0.1.1",
   "private": false,
   "author": "98sean98",
   "description": "Google Calendar inspired event list using Material-UI",
@@ -59,7 +59,8 @@
     "build": "rollup -c",
     "test": "jest",
     "test:watch": "jest --watch",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "semantic-release": "semantic-release"
   },
   "eslintConfig": {
     "extends": "react-app"
