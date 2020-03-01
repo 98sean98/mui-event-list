@@ -20,8 +20,6 @@ jobs:
       script:
         - npm run build
       deploy:
-        - provider: npm
-          email: seanchok@gmail.com
-          api_token: $NPM_API_TOKEN
-          on:
-            branch: master
+        provider: script
+        skip_cleanup: true
+        script: npx semantic-release
