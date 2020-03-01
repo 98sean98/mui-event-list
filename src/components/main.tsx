@@ -1,5 +1,5 @@
 import * as React from "react";
-import { List } from "./List/List";
+import { List } from "./list/List";
 import { MonthEvents } from "./types";
 import { FunctionComponent } from "react";
 
