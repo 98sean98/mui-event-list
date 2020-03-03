@@ -22,11 +22,16 @@ export const EventBlock: FunctionComponent<EventBlockProps> = props => {
   const { event } = props;
   const classes = useStyles();
 
+  const { dateTime, description, location } = event;
+  const firstLine = `${description}${location ? " at " + location : ""}`;
+  const secondLine = moment(dateTime).format("h:mm a");
+
   return (
     <Paper className={classes.root}>
-      <Typography className={classes.text} variant={"body1"}>
-        {moment(event.dateTime).format()}
-      </Typography>
+      <div className={classes.text}>
+        <Typography variant={"body1"}>{firstLine}</Typography>
+        <Typography variant={"body1"}>{secondLine}</Typography>
+      </div>
     </Paper>
   );
 };
