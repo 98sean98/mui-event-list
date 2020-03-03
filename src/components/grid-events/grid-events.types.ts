@@ -1,9 +1,9 @@
 import { DayEvents, Event } from "../internal.types";
 
-export interface GridEventsProps {
+export type GridEventsProps = {
   events: DayEvents;
-}
+};
 
-export interface EventBlockProps {
+export type EventBlockProps = {
   event: Event;
-}
+};

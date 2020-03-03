@@ -1,7 +1,3 @@
-export interface MonthBlockProps {
-  dateTime?: Date;
-}
-
-export const MonthBlockDefaultProps = {
-  dateTime: new Date()
+export type MonthBlockProps = {
+  dateTime: Date;
 };

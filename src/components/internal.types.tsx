@@ -2,8 +2,8 @@ export type MonthEvents = DayEvents[];
 
 export type DayEvents = Event[];
 
-export interface Event {
+export type Event = {
   dateTime: Date;
   description?: string;
   location?: string;
-}
+};

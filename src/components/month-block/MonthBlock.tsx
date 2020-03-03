@@ -2,7 +2,7 @@ import React, { FunctionComponent } from "react";
 import Typography from "@material-ui/core/Typography";
 import makeStyles from "@material-ui/core/styles/makeStyles";
 import moment from "moment";
-import { MonthBlockDefaultProps, MonthBlockProps } from "./month-block.types";
+import { MonthBlockProps } from "./month-block.types";
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -14,7 +14,7 @@ const useStyles = makeStyles(theme => ({
 }));
 
 export const MonthBlock: FunctionComponent<MonthBlockProps> = props => {
-  const { dateTime } = { ...MonthBlockDefaultProps, ...props };
+  const { dateTime } = props;
   const classes = useStyles();
 
   return (
