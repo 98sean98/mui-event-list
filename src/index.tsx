@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import * as serviceWorker from "./serviceWorker";
 import Main from "./components/main";
-import { data } from "./test-data-wrapper";
+import { data } from "./test-data.json";
 
 ReactDOM.render(<Main data={data} />, document.getElementById("root"));
 

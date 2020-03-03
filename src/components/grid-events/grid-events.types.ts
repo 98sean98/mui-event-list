@@ -1,4 +1,4 @@
-import { DayEvents, Event } from "../types";
+import { DayEvents, Event } from "../internal.types";
 
 export interface GridEventsProps {
   events: DayEvents;

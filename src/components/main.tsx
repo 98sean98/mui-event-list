@@ -1,19 +1,23 @@
-import * as React from "react";
+import React, { FunctionComponent } from "react";
 import { ThemeProvider } from "@material-ui/core";
 import { defaultTheme } from "./config/default-theme";
 import { List } from "./list/List";
-import { MonthEvents } from "./types";
-import { FunctionComponent } from "react";
+import { MonthEvents } from "./internal.types";
+import { event } from "./external.types";
+import { parseData } from "./data-wrapper";
 
 interface MainProps {
-  data: MonthEvents[];
+  data: event[];
 }
 
 const Main: FunctionComponent<MainProps> = props => {
-  const { data } = props;
+  const { data: rawData } = props;
+
+  const parsedData: MonthEvents[] = parseData(rawData);
+
   return (
     <ThemeProvider theme={defaultTheme}>
-      <List data={data} />
+      <List data={parsedData} />
     </ThemeProvider>
   );
 };

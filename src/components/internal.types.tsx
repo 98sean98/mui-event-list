@@ -7,7 +7,3 @@ export interface Event {
   description?: string;
   location?: string;
 }
-
-export interface RawEvent {
-  dateTime: string;
-}
