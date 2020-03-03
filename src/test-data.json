@@ -1,19 +1,37 @@
 {
   "data": [
     {
-      "dateTime": "2020-02-01T00:00:00.000Z"
+      "dateTime": "2020-02-01T00:00:00.000Z",
+      "description": "UX design class",
+      "location": "G432"
     },
     {
-      "dateTime": "2020-02-01T00:21:00.000Z"
+      "dateTime": "2020-02-01T02:25:00.000Z",
+      "description": "Conversation engineering",
+      "location": "291"
     },
     {
-      "dateTime": "2020-02-01T01:00:00.000Z"
+      "dateTime": "2020-02-01T12:00:00.000Z",
+      "description": "Softball practice",
+      "location": "Beverley stadium"
     },
     {
-      "dateTime": "2020-02-05T00:00:00.000Z"
+      "dateTime": "2020-02-03T10:00:00.000Z",
+      "description": "Dinner with Jennifer",
+      "location": "Fish & Co"
     },
     {
-      "dateTime": "2020-04-01T00:00:00.000Z"
+      "dateTime": "2020-03-03T10:00:00.000Z",
+      "description": "UI design report deadline"
+    },
+    {
+      "dateTime": "2020-03-03T11:00:00.000Z",
+      "description": "Game night",
+      "location": "Marco's house"
+    },
+    {
+      "dateTime": "2020-04-01T00:00:00.000Z",
+      "description": "Flight to San Francisco"
     }
   ]
 }
