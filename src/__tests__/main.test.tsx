@@ -2,7 +2,7 @@ import React from "react";
 import { render } from "@testing-library/react";
 
 // test data
-import { data } from "../test-data-wrapper";
+import { data } from "../test-data.json";
 
 // test components
 import Main from "../components/main";

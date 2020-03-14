@@ -1,6 +1,6 @@
 import moment from "moment";
-import { data as rawData } from "./test-data.json";
-import { MonthEvents, Event, DayEvents, RawEvent } from "./components/types";
+import { MonthEvents, Event, DayEvents } from "./internal.types";
+import { event } from "./external.types";
 
 const separateEventsByDay = (events: Event[]): DayEvents[] => {
   const eventsByDay: DayEvents[] = [];
@@ -46,13 +46,14 @@ const separateEventsByMonthAndDay = (
   return eventsByMonthAndDate;
 };
 
-const pruneData = (rawData: RawEvent[]): MonthEvents[] => {
+export const parseData = (rawData: event[]): MonthEvents[] => {
   const events: Event[] = rawData.map(event => ({
     ...event,
     dateTime: new Date(event.dateTime)
   }));
-  const eventsByDay: DayEvents[] = separateEventsByDay(events);
+  const sortedEvents = events.sort((a, b) =>
+    moment(a.dateTime).isSameOrBefore(moment(b.dateTime)) ? -1 : 1
+  );
+  const eventsByDay: DayEvents[] = separateEventsByDay(sortedEvents);
   return separateEventsByMonthAndDay(eventsByDay);
 };
-
-export const data: MonthEvents[] = pruneData(rawData);

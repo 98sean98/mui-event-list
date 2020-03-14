@@ -1,3 +1,3 @@
-export interface ListIconProps {
+export type ListIconProps = {
   dateTime: Date;
-}
+};
