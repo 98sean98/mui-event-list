@@ -63,7 +63,7 @@
     "test": "jest",
     "test:watch": "jest --watch",
     "eject": "react-scripts eject",
-    "semantic-release": "semantic-release"
+    "release": "semantic-release"
   },
   "eslintConfig": {
     "extends": "react-app"
