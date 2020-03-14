@@ -37,7 +37,7 @@ export const List: FunctionComponent<ListProps> = props => {
           <div className={classes.groupedEvents}>
             {monthEvents.map((dayEvents, dayIndex) => (
               <ListItem
-                alignItems={dayEvents.length > 2 ? "flex-start" : "center"}
+                alignItems={dayEvents.length > 1 ? "flex-start" : "center"}
                 key={dayIndex}
               >
                 {ListIcon ? (

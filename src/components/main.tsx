@@ -1,6 +1,4 @@
 import React, { FunctionComponent } from "react";
-import { ThemeProvider } from "@material-ui/core";
-import { defaultTheme } from "./config/default-theme";
 import { List } from "./list/List";
 import { MonthEvents } from "./internal.types";
 import { event } from "./external.types";
@@ -17,11 +15,7 @@ const Main: FunctionComponent<MainProps> = props => {
 
   const parsedData: MonthEvents[] = parseData(rawData);
 
-  return (
-    <ThemeProvider theme={defaultTheme}>
-      <List data={parsedData} components={components} />
-    </ThemeProvider>
-  );
+  return <List data={parsedData} components={components} />;
 };
 
 export default Main;
