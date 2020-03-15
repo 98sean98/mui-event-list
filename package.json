@@ -23,6 +23,9 @@
   "files": [
     "build"
   ],
+  "dependencies": {
+    "moment": "^2.24.0"
+  },
   "peerDependencies": {
     "@material-ui/core": "^4.9.4",
     "@types/react": "^16.9.0",
@@ -44,7 +47,6 @@
     "@types/react-dom": "^16.9.0",
     "husky": "^4.2.3",
     "jest": "^24.9.0",
-    "moment": "^2.24.0",
     "prettier": "^1.19.1",
     "pretty-quick": "^2.0.1",
     "react": "^16.12.0",
@@ -63,7 +65,7 @@
     "test": "jest",
     "test:watch": "jest --watch",
     "eject": "react-scripts eject",
-    "semantic-release": "semantic-release"
+    "release": "semantic-release"
   },
   "eslintConfig": {
     "extends": "react-app"

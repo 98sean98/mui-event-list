@@ -2,10 +2,10 @@ import React from "react";
 import { render } from "@testing-library/react";
 
 // test data
-import { data } from "../test-data.json";
+import { data } from "../src/test-data.json";
 
 // test components
-import Main from "../components/main";
+import Main from "../src/components/main";
 
 const renderComponent = () => {
   return render(<Main data={data} />);
