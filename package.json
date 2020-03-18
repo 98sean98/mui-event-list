@@ -20,6 +20,7 @@
   "main": "build/main.js",
   "module": "build/main.es.js",
   "jsnext:main": "build/main.es.js",
+  "typings": "build/main.d.ts",
   "files": [
     "build"
   ],
@@ -54,6 +55,7 @@
     "react-scripts": "3.4.0",
     "rollup": "^1.31.1",
     "rollup-plugin-peer-deps-external": "^2.2.2",
+    "rollup-plugin-terser": "^5.3.0",
     "rollup-plugin-typescript2": "^0.26.0",
     "semantic-release": "^17.0.4",
     "ts-jest": "^25.2.1",
@@ -61,7 +63,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "rollup -c",
+    "build": "rollup -c && ./build.sh",
     "test": "jest",
     "test:watch": "jest --watch",
     "eject": "react-scripts eject",
