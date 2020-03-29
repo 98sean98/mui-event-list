@@ -1,14 +1,8 @@
 import React, { FunctionComponent } from "react";
-import { List } from "./list/List";
+import { MainProps } from "./main.types";
 import { MonthEvents } from "./internal.types";
-import { event } from "./external.types";
-import { Components } from "./list/list.types";
+import { List } from "./list/List";
 import { parseData } from "./data-wrapper";
-
-type MainProps = {
-  data: event[];
-  components?: Components;
-};
 
 const Main: FunctionComponent<MainProps> = props => {
   const { data: rawData, components } = props;
