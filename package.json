@@ -61,11 +61,6 @@
     "ts-jest": "^25.2.1",
     "typescript": "~3.7.2"
   },
-  "resolutions": {
-    "**/**/acorn": "^6.4.1",
-    "**/**/minimist": "^1.2.2",
-    "**/**/os-locale": "^5.0.0"
-  },
   "scripts": {
     "start": "react-scripts start",
     "build": "rollup -c && ./build.sh",
