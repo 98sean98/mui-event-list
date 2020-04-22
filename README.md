@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.com/98sean98/mui-event-list.svg?branch=master)](https://travis-ci.com/98sean98/mui-event-list)
+
 # Mui Event List
 
 A Google calendar inspired event list using Material-UI for React.
@@ -96,7 +98,7 @@ const MonthBlock = props => {
 
 ## API Reference
 
-[MuiEventList]()
+[MuiEventList](./README.md)
 
 Name | Type | Required | Description
 --- | --- |:---:| ---
