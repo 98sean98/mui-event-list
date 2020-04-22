@@ -98,7 +98,7 @@ const MonthBlock = props => {
 
 ## API Reference
 
-[MuiEventList]()
+[MuiEventList](./README.md)
 
 Name | Type | Required | Description
 --- | --- |:---:| ---
